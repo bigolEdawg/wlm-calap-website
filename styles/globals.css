@@ -1,0 +1,186 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap'); */
+/* Add this to your global CSS file (e.g., globals.css) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(/ID_NickHallPhotography-scaled.jpg) no-repeat center fixed; 
+  color: #333;
+  font-family: "Nunito";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0; /* Reset default body margin */
+  padding: 0; /* Reset default body padding */
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  text-align: center;
+  margin: 60px 0;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header span {
+  display: block;
+  line-height: 1em;
+}
+header span:first-child {
+  font-size: 1em;
+  font-weight: 400;
+}
+header span:last-child {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+header h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+footer {
+  background: #111;
+  color: #bbb;
+  padding: 40px;
+  text-align: center;
+  margin-top: auto
+}
+/* .page-content {
+  max-width: 1200px;
+  margin: 20px auto 80px;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+} */
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 1.2em;
+  padding: 0 1.5em;
+  background-color: rgba(231, 198, 253,.8);
+  border-radius: 0.5rem;
+}
+.main-body{
+  font-family: poppins, sans-serif;
+}
+
+.sub-header {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+}
+
+.image-normal-right {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.image-normal-left {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/*Navbar*/
+
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  margin-left: 12px;
+}
+nav .logo {
+  margin-right: auto;
+}
+
+
+/*Homepage Slider*/
+
+.slider-wrapper {
+    position: relative;
+    max-width: 45rem;
+    margin: 0 auto;
+    margin-top: 1.2em;
+}
+.slider-wrapper-two {
+    position: relative;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 1.2em;
+}
+
+.slider {
+    display: flex; /*This is what puts the images side by side*/
+    aspect-ratio: 13 / 9;
+    overflow-x: auto;
+    /* overflow-x: hidden; Doing this will get rid of the scroll bar however the function will also be deleted*/
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider-two {
+    display: flex; /*This is what puts the images side by side*/
+    aspect-ratio: 9/16;
+    overflow-x: auto;
+    /* overflow-x: hidden; Doing this will get rid of the scroll bar however the function will also be deleted*/
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+#content::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 1 0 80%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+/*Everything above this comment is for the image scroll*/
+
